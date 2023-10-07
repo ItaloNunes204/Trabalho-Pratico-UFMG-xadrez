@@ -1,0 +1,6 @@
+peão -----pontuação: 1 ---------id: 1 
+bispo -----pontuação: 3 ---------id: 2
+cavalo -----pontuação: 3 ---------id: 3
+torre -----pontuação: 5 ---------id: 4 
+rei -----pontuação: 10 ---------id: 5  
+dama -----pontuação: 9 ---------id: 6 
