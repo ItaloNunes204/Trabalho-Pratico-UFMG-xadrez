@@ -9,12 +9,14 @@ class Peao {
  
     int linha; // linha que a peça esta 
     int coluna; // coluna que a peça esta 
-    Jogador Jogador; // qual jogador (1 ou 2)
-    bool n_jogadas; // numero de jogadas realizadas pela peça
+    Jogador jogador; // qual jogador (1 ou 2)
+    int n_jogadas; // numero de jogadas realizadas pela peça
     bool estado; // informa se a peça esta "viva" ou "morta"
     bool jogada_inicial; // o peao na primeira jogada pode realizar uma jogada diferente
     
  public:
+    // cria um objeto do tipo peao
+    Peao(int linha, int coluna,Jogador j);
      // modivica o numero de jogadas da peça 
     void modifica_n_jogadas();
 
@@ -22,10 +24,10 @@ class Peao {
     void modifica_estado();
 
     // modifica a posição da peça 
-    void modifica_posicao();
+    void modifica_posicao(int linha, int coluna);
 
     // verifica se é possivel realizar o movimento
-    void verifica_posicao();
+    bool verifica_posicao(int linha, int coluna);
 
     // modifica o estado da jogada inicial
     void modifica_jogada_inicial();

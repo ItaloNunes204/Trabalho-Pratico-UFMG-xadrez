@@ -48,6 +48,9 @@ private:
     // retorna verdadeiro de o jogador ainda tem peças 
     bool tem_n_peças();
 
+    //retorna o tipo de jogador 
+    int tipo_jogador();
+
 };
 
 #endif

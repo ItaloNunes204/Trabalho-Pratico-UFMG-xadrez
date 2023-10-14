@@ -14,6 +14,8 @@ class Cavalo {
     bool estado; // informa se a peça esta "viva" ou "morta"
     
  public:
+
+    
      // modivica o numero de jogadas da peça 
     void modifica_n_jogadas();
 
