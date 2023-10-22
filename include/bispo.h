@@ -15,6 +15,8 @@ class Bispo {
     bool estado; // informa se a peça esta "viva" ou "morta"
 
  public:
+
+   Bispo(int linha, int coluna, Jogador j);
     
     // modivica o numero de jogadas da peça 
     void modifica_n_jogadas();

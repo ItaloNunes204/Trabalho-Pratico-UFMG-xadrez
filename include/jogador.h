@@ -19,7 +19,14 @@ private:
 
  public:
 
+    //construtor da classe 
+    Jogador();
+
+    //construtor da classe 
     Jogador(int tipo);
+
+    //copia uma classe 
+    void copia_jogador(Jogador j);
 
     // o numero de peças do tipo bispo e reduzida 
     void mata_bispo();
@@ -46,7 +53,7 @@ private:
     int pontuacao();
 
     // retorna verdadeiro de o jogador ainda tem peças 
-    bool tem_n_peças();
+    bool possui_peças();
 
     //retorna o tipo de jogador 
     int tipo_jogador();
