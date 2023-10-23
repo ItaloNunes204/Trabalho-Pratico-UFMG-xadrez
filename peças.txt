@@ -9,3 +9,12 @@ dama -----pontuação: 9 ---------id: 6
 padrao:
     jogador 1 = branco => cima 
     jogador 2 = preto => baixo 
+
+
+movimento das peças ja criadas
+peao-ok
+cavalo-ok
+bispo-ok
+torre-ok
+dama-ok
+rei-ok

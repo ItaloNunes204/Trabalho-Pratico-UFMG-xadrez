@@ -10,7 +10,7 @@ class Cavalo {
     int linha; // linha que a peça esta 
     int coluna; // coluna que a peça esta 
     Jogador jogador; // qual jogador (1 ou 2)
-    bool n_jogadas; // numero de jogadas realizadas pela peça
+    int n_jogadas; // numero de jogadas realizadas pela peça
     bool estado; // informa se a peça esta "viva" ou "morta"
     
  public:

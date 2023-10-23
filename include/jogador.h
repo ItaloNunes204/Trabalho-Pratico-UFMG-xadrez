@@ -1,6 +1,6 @@
 #ifndef JOGADOR_H_
 #define JOGADOR_H_
-#include "jogador.h"
+
 
 #include <iostream>
 
@@ -24,9 +24,6 @@ private:
 
     //construtor da classe 
     Jogador(int tipo);
-
-    //copia uma classe 
-    void copia_jogador(Jogador j);
 
     // o numero de peças do tipo bispo e reduzida 
     void mata_bispo();

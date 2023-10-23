@@ -11,13 +11,9 @@ Peao::Peao(int linha, int coluna, Jogador j){
     this->jogada_inicial = true;
 }
 
+
 void Peao::modifica_estado(){
     this->estado = false;
-}
-
-
-void Peao::modifica_jogada_inicial(){
-    this->jogada_inicial= false;
 }
 
 

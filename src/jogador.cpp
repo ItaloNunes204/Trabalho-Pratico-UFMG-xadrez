@@ -1,4 +1,4 @@
-#include "./include/jogador.h"
+#include "jogador.h"
 #include <iostream>
 
 Jogador::Jogador(){
@@ -11,6 +11,7 @@ Jogador::Jogador(){
     this->torre = 2;
 }
 
+
 Jogador::Jogador(int tipo){
     this->tipo = tipo;
     this->pontuacao_ = 0;
@@ -22,40 +23,36 @@ Jogador::Jogador(int tipo){
     this->torre = 2;
 }
 
-void Jogador::copia_jogador(Jogador j){
-    this->tipo = j.tipo;
-    this->pontuacao_ = j.pontuacao_;
-    this->bispo = j.bispo;
-    this->cavalo = j.cavalo;
-    this->dama = j.dama;
-    this->peao = j.peao;
-    this->rei = j.rei;
-    this->torre = j.torre;
-}
 
 void Jogador::mata_bispo(){
     this->bispo--;
 }
 
+
 void Jogador::mata_cavalo(){
     this->cavalo--;
 }
+
 
 void Jogador::mata_dama(){
     this->dama--;
 }
 
+
 void Jogador::mata_peao(){
     this->peao--;
 }
+
 
 void Jogador::mata_rei(){
     this->rei--;
 }
 
+
 void Jogador::mata_torre(){
     this->torre--;
 }
+
 
 void Jogador::modifica_pontuacao(int tipo){
     //peão
@@ -84,9 +81,11 @@ void Jogador::modifica_pontuacao(int tipo){
     }
 }
 
+
 int Jogador:: pontuacao(){
-    return this->pontuacao();
+    return this->pontuacao_;
 }
+
 
 bool Jogador:: possui_peças(){
     bool saida;
@@ -97,6 +96,7 @@ bool Jogador:: possui_peças(){
     }
     return saida;
 }
+
 
 int Jogador:: tipo_jogador(){
     return this->tipo;
